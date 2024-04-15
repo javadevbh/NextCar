@@ -27,6 +27,7 @@ function FilteredCards() {
     );
   return (
     <div>
+      <BackButton backHandler={backHandler} />
       <CarsList data={filteredCars} />
     </div>
   );

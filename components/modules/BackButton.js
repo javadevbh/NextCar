@@ -1,4 +1,4 @@
-import styles from "./Back.module.css";
+import styles from "./BackButton.module.css";
 import Back from "../icons/Back";
 
 function BackButton({ backHandler }) {
