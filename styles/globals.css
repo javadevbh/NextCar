@@ -6,6 +6,10 @@ body {
   background-color: #f8f8f7;
 }
 
+:root {
+  --primaryColor: #befa00;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

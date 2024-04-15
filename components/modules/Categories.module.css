@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 30px auto;
+  padding: 5px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.container a {
+  flex: 1;
+}
+
+.container div {
+  background-color: var(--primaryColor);
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 320px;
+    flex-wrap: wrap;
+  }
+
+  .container div {
+    width: 150px;
+  }
+}

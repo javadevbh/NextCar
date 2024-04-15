@@ -23,7 +23,7 @@
 }
 
 .price {
-  background-color: #befa00;
+  background-color: var(--primaryColor);
   padding: 3px 5px;
   border-radius: 5px;
   font-size: 0.9rem;

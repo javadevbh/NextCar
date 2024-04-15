@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 import styles from "./CarDetailsPage.module.css";
+import BackButton from "../modules/BackButton";
 import Company from "../icons/Company";
 import Location from "../icons/Location";
 import Model from "../icons/Model";
@@ -9,9 +11,15 @@ import Calender from "../icons/Calender";
 function CarDetailsPage(props) {
   const { name, model, year, distance, location, image, price, description } =
     props;
+  const router = useRouter();
+
+  const backHandler = () => {
+    router.back();
+  };
 
   return (
     <div className={styles.container}>
+      <BackButton backHandler={backHandler} />
       <img src={image} className={styles.image} />
       <h3 className={styles.header}>
         {name} {model}
