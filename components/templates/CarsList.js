@@ -1,9 +1,9 @@
+import { useRouter } from "next/router";
+import styles from "./CarsList.module.css";
 import Card from "../modules/Card";
 import BackButton from "../modules/BackButton";
-import styles from "./CategoryPage.module.css";
-import { useRouter } from "next/router";
 
-function CategoryPage({ cars }) {
+function CategoryPage({ data }) {
   const router = useRouter();
 
   const backHandler = () => {
@@ -14,7 +14,7 @@ function CategoryPage({ cars }) {
     <div>
       <BackButton backHandler={backHandler} />
       <div className={styles.CardsContainer}>
-        {cars.map((car) => (
+        {data.map((car) => (
           <Card key={car.id} {...car} />
         ))}
       </div>
