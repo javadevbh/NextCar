@@ -15,7 +15,7 @@ function Layout({ children }) {
         {" "}
         <p>
           Developed by{" "}
-          <a target="_blank" href="https://github.com/javadevbh/">
+          <a target="_blank" rel="noreferrer" href="https://github.com/javadevbh/">
             Javad
           </a>{" "}
           with ❤️ | Next.js project &copy;
